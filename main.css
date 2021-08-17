@@ -1,0 +1,26 @@
+.choice {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.choices {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100vh;
+}
+
+body {
+	background: black;
+	color: white;
+}
+
+.choice:hover > img {
+	border: 10px solid yellow;
+}
+
+img {
+	transition: all 0.5s ease;
+}
