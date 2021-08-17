@@ -16,17 +16,17 @@ choices.forEach(function (choice) {
 		const computerChoice = getComputerChoice();
 		const playerChoice = choice.dataset.name;
 		if (computerChoice == playerChoice) {
-			console.log("you tied");
+			alert("you tied");
 		} else if (
 			(playerChoice == "Rock" && computerChoice == "Snip") ||
 			(playerChoice == "Paper" && computerChoice == "Rock") ||
 			(playerChoice == "Snip" && computerChoice == "Paper")
 		) {
 			player += 1;
-			console.log("player wins");
+			alert("player wins");
 		} else {
 			computer += 1;
-			console.log("computer wins");
+			alert("computer wins");
 		}
 	};
 });
